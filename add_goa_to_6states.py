@@ -1,0 +1,1 @@
+import pandas as pd; df=pd.read_csv('groundwater_7states_final.csv'); print(df[df[['District','Block','Village']].isnull().any(axis=1)].to_string(index=False))
