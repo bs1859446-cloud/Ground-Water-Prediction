@@ -1,0 +1,86 @@
+State,District,Block,Village,Latitude,Longitude,Date,WL_mbgl
+Andhra Pradesh,Alluri Sitharama Raju,Addateegala,Addateegala,17.4633,82.0271,10-01-25,7.96
+Andhra Pradesh,Alluri Sitharama Raju,Addateegala,Mallavaram Mammilu,17.5032,82.0124,10-01-25,4.24
+Andhra Pradesh,Alluri Sitharama Raju,Addateegala,Rayapalli,17.57208,82.00849,10-01-25,2.03
+Kerala,Alappuzha,Ambalappuzha,Ambalappuzha,9.38347,76.37070,01-08-14,1.9
+Kerala,Alappuzha,Ambalappuzha,Kaidavana,9.40773,76.35080,01-08-14,2.2
+Kerala,Alappuzha,Ambalappuzha,Purakkad,9.35317,76.37266,01-08-14,2.5
+Kerala,Alappuzha,Ambalappuzha,Vandanam,9.41366,76.34940,01-08-14,3.0
+Kerala,Alappuzha,Aryad,Alappuzha Beach,9.49409,76.32090,01-08-14,2.0
+Kerala,Alappuzha,Aryad,Alappuzha Town,9.49519,76.33410,01-08-14,3.9
+Kerala,Alappuzha,Aryad,Kaidavana,9.47298,76.34360,01-08-14,1.4
+Kerala,Alappuzha,Aryad,Kalavoor,9.56774,76.32720,01-08-14,1.6
+Kerala,Alappuzha,Aryad,Valavanad,9.58957,76.32780,01-08-14,1.5
+Bihar,Araria,Araria,Araria,26.13750,87.42917,30-08-25,2.72
+Bihar,Araria,Bhargama,Bhargama,26.05250,87.15028,30-08-25,2.05
+Bihar,Araria,Forbesganj,Bathnaha,26.34945,87.23139,30-08-25,3.21
+Bihar,Araria,Forbesganj,Hariapur,26.25597,87.23114,30-08-25,1.96
+Bihar,Araria,Forbesganj,Matiari,26.28889,87.25195,30-08-25,2.55
+Bihar,Araria,Jokihat,Jokihat,26.14583,87.65417,30-08-25,1.92
+Bihar,Araria,Kursakanta,Kurasakanta,26.36389,87.44444,30-08-25,1.36
+Bihar,Araria,Narpatganj,Narpatganj,26.33444,87.10750,30-08-25,1.88
+Bihar,Araria,Narpatganj,Narpatganj,26.33444,87.10750,30-08-25,3.39
+Bihar,Araria,Palasi,Palasi,26.25194,87.56889,30-08-25,2.27
+Bihar,Araria,Raniganj,Raniganj,26.08225,87.23631,30-08-25,2.97
+Bihar,Araria,Sikty,Sikti,26.40417,87.54806,30-08-25,2.67
+Bihar,Arwal,Arwal,Arwal,25.25417,84.67917,30-08-25,4.07
+Bihar,Arwal,Arwal,Arwal,25.25444,84.67944,30-08-25,5.18
+Bihar,Arwal,Arwal,Dirpal Bigha,25.29417,84.70277,30-08-25,1.30
+Bihar,Arwal,Arwal,Dirpal Bigha,25.29417,84.70277,30-08-25,1.30
+Bihar,Arwal,Arwal,Madhubani,25.19028,84.60445,30-08-25,2.65
+Bihar,Arwal,Kaler,Kaler,25.11722,84.49973,30-08-25,1.20
+Bihar,Arwal,Kapri,Bairbigha,25.14833,84.70695,30-08-25,4.70
+Bihar,Arwal,Kapri,Imamganj,25.20833,84.76667,30-08-25,4.00
+Bihar,Arwal,Kapri,Kinjer,25.21250,84.82917,30-08-25,6.00
+Bihar,Arwal,Kurtha,Kurtha,25.12917,84.82083,30-08-25,1.25
+Bihar,Arwal,Sonbhadra-Bansi-Surajpur,Bansi Surajpur,25.11111,84.66972,30-08-25,1.00
+Bihar,Arwal,Sonbhadra-Bansi-Surajpur,sadipur,25.09400,84.74619,30-08-25,0.80
+Bihar,Aurangabad,Aurangabad,Aurangabad,24.76667,84.37500,30-08-25,0.30
+Bihar,Aurangabad,Aurangabad,Patraya,24.83583,84.34278,30-08-25,1.75
+Bihar,Aurangabad,Barun,Barun,24.89167,84.24167,30-08-25,9.20
+Bihar,Aurangabad,Daudnagar,Daudnagar,25.02500,84.42500,30-08-25,3.30
+Bihar,Aurangabad,Deo,Deo,24.67500,84.45417,30-08-25,3.20
+Bihar,Aurangabad,Deo,Pataya,24.65417,84.41084,30-08-25,0.60
+Bihar,Aurangabad,Goh,Deohara/Goh,25.00222,84.57611,30-08-25,8.05
+Bihar,Aurangabad,Goh,Dhobi Tola,24.98389,84.64722,30-08-25,2.30
+Bihar,Aurangabad,Haspura,Etwan,25.04389,84.54389,30-08-25,1.50
+Bihar,Aurangabad,Kutumba,Kutumba,24.61278,84.22000,30-08-25,1.55
+Bihar,Aurangabad,Kutumba,Kutumba,24.61250,84.22000,30-08-25,3.10
+Bihar,Aurangabad,Madanpur,Madanpur,24.66667,84.59167,30-08-25,6.40
+Bihar,Aurangabad,Nabinagar,Mahauli,24.61139,84.16139,30-08-25,2.00
+Bihar,Aurangabad,Nabinagar,Narari Kala,24.78750,84.14944,30-08-25,8.20
+Bihar,Aurangabad,Obra,Obra,24.90417,84.39167,30-08-25,6.00
+Bihar,Aurangabad,Rafiganj,Bishunpur,24.84153,84.54922,30-08-25,1.80
+Bihar,Aurangabad,Rafiganj,Pandeykarna,24.76144,84.66411,30-08-25,2.10
+Bihar,Aurangabad,Rafiganj,Rafiganj,24.83750,84.63750,30-08-25,5.15
+Bihar,Aurangabad,Rafiganj,Tineri,24.86333,84.64194,30-08-25,5.15
+Bihar,Banka,Amarpur,Amarpur,25.04689,86.89539,30-08-25,3.85
+Bihar,Banka,Amarpur,English More,25.05083,86.88889,30-08-25,1.13
+Bihar,Banka,Amarpur,Rampur,25.05278,86.86111,30-08-25,1.50
+Bihar,Banka,Banka,Banka Ps,24.89583,86.92083,30-08-25,0.95
+Bihar,Banka,Banka,Fulidumar,24.82722,86.85139,30-08-25,2.60
+Bihar,Banka,Banka,Gabtad,24.91033,86.83522,30-08-25,3.20
+Bihar,Banka,Banka,GORWAMARAN TOLA,24.86211,86.80400,30-08-25,2.40
+Bihar,Banka,Barahat,HARIJAN TOLA KARHARA,24.91786,86.99886,30-08-25,5.20
+Bihar,Banka,Bausi,Baunsi,24.79889,87.02528,30-08-25,3.30
+Bihar,Banka,Bausi,Bishanpur,24.67633,87.03686,30-08-25,2.60
+Bihar,Banka,Bausi,SASAN,24.77517,86.97292,30-08-25,2.90
+Bihar,Banka,Belhar,Bela,24.83411,86.55050,30-08-25,3.30
+Bihar | Banka | Belhar | DOMJOR TOLA | 24.90164 | 86.58728 | 30-08-25 | 3.80
+Bihar | Banka | Belhar | Mathura | 24.91889 | 86.62305 | 30-08-25 | 1.80
+Bihar | Banka | Belhar | TELYA KUMARI | 24.94592 | 86.54317 | 30-08-25 | 2.90
+Bihar | Banka | Chandan | Chandan | 24.63722 | 86.68528 | 30-08-25 | 2.30
+Bihar | Banka | Chandan | Kurumtadh | 24.70045 | 86.59055 | 30-08-25 | 2.60
+Bihar | Banka | Dhuraiya | BATSAR | 25.04161 | 87.15019 | 30-08-25 | 3.35
+Bihar | Banka | Dhuraiya | Beldiha | 24.94269 | 87.12769 | 30-08-25 | 1.40
+Bihar | Banka | Dhuraiya | Panjwara | 24.87917 | 87.13333 | 30-08-25 | 4.10
+Bihar | Banka | Fullidumar | Khesar Samta | 24.95667 | 86.72444 | 30-08-25 | 1.75
+Bihar | Banka | Katoria | DEWASI | 24.69317 | 86.70509 | 30-08-25 | 8.90
+Bihar | Banka | Katoria | Katoria | 24.75000 | 86.72916 | 30-08-25 | 1.35
+Bihar | Banka | Katoria | Merha | 24.76744 | 86.88689 | 30-08-25 | 1.60
+Bihar | Banka | Katoria | Murliken | 24.65467 | 86.85278 | 30-08-25 | 0.20
+Bihar | Banka | Katoria | Tinmurty | 24.84444 | 86.72222 | 30-08-25 | 2.90
+Bihar | Banka | Katoria | Tola charkapathar Lakrama | 24.59847 | 86.85902 | 30-08-25 | 3.40
+Bihar | Banka | Katoria | Tola udalkhunt Bhorsar Bhelwa | 24.66567 | 86.76986 | 30-08-25 | 3.90
+Bihar | Banka | Shambhuganj | Mirjapur | 25.05667 | 86.76056 | 30-08-25 | 1.60
+Bihar | Banka | Shambhuganj | Sambhuganj | 25.08055 | 86.73333 | 30-08-25 | 1.40
