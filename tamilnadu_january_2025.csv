@@ -1,0 +1,227 @@
+State,District,Block,Village,Latitude,Longitude,Date,WL_mbgl
+Tamil Nadu,Ariyalur,Andimadam,Ilaiyur,11.2333,79.315,10-01-25,1.85
+Tamil Nadu,Ariyalur,Andimadam,Kattathur,11.3069,79.3494,10-01-25,0.55
+Tamil Nadu,Ariyalur,Andimadam,Koovathur,11.2978,79.3775,10-01-25,1.18
+Tamil Nadu,Ariyalur,Andimadam,Kuvagam (Idayankurichi),11.26581,79.29425,10-01-25,1.25
+Tamil Nadu,Ariyalur,Andimadam,Olaiyur,11.41,79.3328,10-01-25,1.90
+Tamil Nadu,Ariyalur,Jayamkondam,Jayakondasolapuram,11.2128,79.3644,10-01-25,2.40
+Tamil Nadu,Ariyalur,Jayamkondam,Pappakudi,11.2853,79.49,10-01-25,2.35
+Tamil Nadu,Ariyalur,Jayamkondam,Periyavalayam,11.2111,79.3958,10-01-25,3.98
+Tamil Nadu,Ariyalur,Jayamkondam,Suriyamanal,11.1981,79.3272,10-01-25,2.70
+Tamil Nadu,Ariyalur,Sendurai,Sendurai,11.24944,79.17917,10-01-25,9.62
+Tamil Nadu,Ariyalur,T. Palur,Manakethi,11.1394,79.2378,10-01-25,2.10
+Tamil Nadu,Ariyalur,Thirumanur,Kelaiyur,11.0333,79.05,10-01-25,0.53
+Tamil Nadu,Chengalpattu,Chithamur,Atcharappakkam,12.4,79.8167,10-01-25,1.60
+Tamil Nadu,Chengalpattu,Chithamur,Sunambedu,12.2583,79.9083,10-01-25,0.73
+Tamil Nadu,Chengalpattu,Kattankolathur,Chengalpattu,12.7,79.975,10-01-25,2.42
+Tamil Nadu,Chengalpattu,Kundrathur,Nanthivaram,12.8417,80.0667,10-01-25,5.17
+Tamil Nadu,Chengalpattu,Kundrathur,Nanthivaram,12.8417,80.0667,10-01-25,2.30
+Tamil Nadu,Chengalpattu,Kundrathur,Potheri,12.82767,80.04333,10-01-25,1.70
+Tamil Nadu,Chengalpattu,Madurantakam,Karunkuzi,12.5292,79.9,10-01-25,5.35
+Tamil Nadu,Chengalpattu,Madurantakam,Porur,12.3472,79.9083,10-01-25,1.70
+Tamil Nadu,Chengalpattu,St.Thomas Mount,Chitlapakkam,12.9333,80.1333,10-01-25,5.05
+Tamil Nadu,Chengalpattu,St.Thomas Mount,Injambakkam,12.9125,80.2458,10-01-25,1.18
+Tamil Nadu,Chengalpattu,St.Thomas Mount,Irumbuliyur,12.9167,80.1083,10-01-25,1.64
+Tamil Nadu,Chengalpattu,Thiruporur,Thirupporur,12.7292,80.1917,10-01-25,2.05
+Tamil Nadu,Chengalpattu,Tirukkalukunram,Mamallapuram,12.625,80.1917,10-01-25,3.45
+Tamil Nadu,Chennai,Chennai,Egmore,13.0747,80.2625,10-01-25,0.63
+Tamil Nadu,Chennai,Chennai,Kodambakkam,13.0417,80.2083,10-01-25,1.90
+Tamil Nadu,Chennai,Chennai,Mylapore,13.025,80.2583,10-01-25,3.40
+Tamil Nadu,Chennai,Chennai,Mylapore,13.0192,80.2678,10-01-25,2.00
+Tamil Nadu,Chennai,Chennai,Purasawalkam,13.0833,80.2708,10-01-25,1.15
+Tamil Nadu,Chennai,Chennai,Saidapet,13.0222,80.225,10-01-25,1.00
+Tamil Nadu,Chennai,Chennai,Tondiarpet,13.1167,80.275,10-01-25,2.10
+Tamil Nadu,Chennai,Chennai,Tondiarpet,13.1056,80.2814,10-01-25,2.88
+Tamil Nadu,Chennai,Chennai,Triplicane,13.0556,80.2814,10-01-25,2.92
+Tamil Nadu,Chennai,Chennai,Urur,13.0014,80.27,10-01-25,2.10
+Tamil Nadu,Chennai,Chennai,Vada Agaram,13.0667,80.2278,10-01-25,3.24
+Tamil Nadu,Chennai,Chennai,Vallalar Nagar,13.1,80.28333,10-01-25,2.15
+Tamil Nadu,Chennai,Kundrathur,Madanandapuram,13.0225,80.1533,10-01-25,3.00
+Tamil Nadu,Chennai,Puzhal,Kadirvedu,13.15,80.2,10-01-25,3.47
+Tamil Nadu,Chennai,St.Thomas,Pallikaranai,12.92222,80.20139,10-01-25,1.92
+Tamil Nadu,Chennai,Thomas Malai,Palavanthangal,13.0042,80.1875,10-01-25,1.00
+Tamil Nadu,Chennai,Villivakkam,Mugapair,13.0833,80.1875,10-01-25,1.24
+Tamil Nadu,Coimbatore,Anamalai,Marchanaickenpalayam,10.6353,76.9411,10-01-25,1.90
+Tamil Nadu,Coimbatore,Annur,Annur,11.2333,77.1083,10-01-25,7.25
+Tamil Nadu,Coimbatore,Annur,Annur,11.225,77.1083,10-01-25,6.77
+Tamil Nadu,Coimbatore,Annur,Kattampatty,11.1758,77.0575,10-01-25,13.88
+Tamil Nadu,Coimbatore,Annur,Kuppanur,11.2983,77.0789,10-01-25,7.20
+Tamil Nadu,Coimbatore,Karamadai,Karamadai,11.2558,76.9347,10-01-25,6.63
+Tamil Nadu,Coimbatore,Karamadai,Mettupalayam,11.3,76.9472,10-01-25,9.80
+Tamil Nadu,Coimbatore,Kinathukadavu,Kinthukadavu,10.8167,77.0167,10-01-25,6.57
+Tamil Nadu,Coimbatore,Kinathukadavu,Periya Negamam,10.7292,77.0917,10-01-25,3.46
+Tamil Nadu,Coimbatore,Kinathukadavu,Pottayandipuram,10.8083,76.9583,10-01-25,5.86
+Tamil Nadu,Coimbatore,Kinathukadavu,Sozhanur,10.7333,77.0292,10-01-25,5.40
+Tamil Nadu,Coimbatore,Madukkarai,Ettimadai,10.875,76.9,10-01-25,12.32
+Tamil Nadu,Coimbatore,Madukkarai,Madukarai,10.9083,76.9667,10-01-25,16.00
+Tamil Nadu,Coimbatore,Periyanayakkanpalayam,Aupperpalayam,11.0414,77.0006,10-01-25,4.23
+Tamil Nadu,Coimbatore,Periyanayakkanpalayam,Billichi,11.2069,76.9922,10-01-25,5.20
+Tamil Nadu,Coimbatore,Periyanayakkanpalayam,Goundenpalayam,11.0419,76.9419,10-01-25,4.17
+Tamil Nadu,Coimbatore,Periyanayakkanpalayam,Vadavalli,11.0314,76.8844,10-01-25,44.62
+Tamil Nadu,Coimbatore,Pollachi North,Nalluthukuzhuli,10.675,76.9375,10-01-25,3.85
+Tamil Nadu,Coimbatore,Pollachi North,Ramanathapuram,10.69167,76.90833,10-01-25,3.33
+Tamil Nadu,Coimbatore,Pollachi North,Thalakkarai,10.6958,76.9375,10-01-25,4.20
+Tamil Nadu,Coimbatore,Pollachi South,T. Kottampatty,10.6611,77,10-01-25,0.65
+Tamil Nadu,Coimbatore,Sarcarsamakulam,Saravanmpatty,11.075,77.0014,10-01-25,15.68
+Tamil Nadu,Coimbatore,Sarcarsamakulam,Saravanmpatty,11.0694,77.0014,10-01-25,4.60
+Tamil Nadu,Coimbatore,Sultanpet,Chettipalayam,10.94167,77.075,10-01-25,25.08
+Tamil Nadu,Coimbatore,Sulur,Karumathampatty,11.0875,77.1792,10-01-25,1.95
+Tamil Nadu,Coimbatore,Sulur,Sulur,11.025,77.125,10-01-25,1.80
+Tamil Nadu,Coimbatore,Thondamuthur,Kuniamuthur,10.9542,76.95,10-01-25,15.95
+Tamil Nadu,Coimbatore,Thondamuthur,Kurichy,10.9667,76.9833,10-01-25,5.40
+Tamil Nadu,Coimbatore,Thondamuthur,Singanallur,10.9964,77.0208,10-01-25,2.80
+Tamil Nadu,Coimbatore,Thondamuthur,Thelungupalayam,10.9833,76.9228,10-01-25,4.40
+Tamil Nadu,Coimbatore,Thondamuthur,Vadavalli,11.025,76.9083,10-01-25,26.70
+Tamil Nadu,Cuddalore,Cuddalore,Thiyagavalli,11.6392,79.7472,10-01-25,0.90
+Tamil Nadu,Cuddalore,Cuddalore,Vanniyar Palayam,11.7644,79.7647,10-01-25,2.80
+Tamil Nadu,Cuddalore,Kammapuram,Gangaikondan,11.5583,79.4833,10-01-25,2.50
+Tamil Nadu,Cuddalore,Kammapuram,Pudhukoraipettai,11.5186,79.3697,10-01-25,4.30
+Tamil Nadu,Cuddalore,Kattumannarkoil,Chidambaram (M),11.38333,79.69167,10-01-25,1.25
+Tamil Nadu,Cuddalore,Kattumannarkoil,Ma.Arasur,11.2667,79.6208,10-01-25,2.15
+Tamil Nadu,Cuddalore,Kattumannarkoil,Mannargudi,11.275,79.5472,10-01-25,2.42
+Tamil Nadu,Cuddalore,Komaratchi,Solatharam,11.3617,79.5083,10-01-25,4.47
+Tamil Nadu,Cuddalore,Komaratchi,Veeranatham,11.3058,79.5939,10-01-25,2.10
+Tamil Nadu,Cuddalore,Kurinjipadi,Alappakkam,11.6011,79.7189,10-01-25,2.20
+Tamil Nadu,Cuddalore,Kurinjipadi,Kottagam,11.5222,79.5256,10-01-25,2.30
+Tamil Nadu,Cuddalore,Kurinjipadi,Kundiamallur North,11.5269,79.6517,10-01-25,2.55
+Tamil Nadu,Cuddalore,Kurinjipadi,Puliyur,11.6475,79.6392,10-01-25,7.20
+Tamil Nadu,Cuddalore,Kurinjipadi,Sepalanatham,11.5294,79.5311,10-01-25,2.80
+Tamil Nadu,Cuddalore,Kurinjipadi,Serakuppam,11.5394,79.5914,10-01-25,2.80
+Tamil Nadu,Cuddalore,Kurinjipadi,Serakuppam,11.5625,79.5917,10-01-25,4.54
+Tamil Nadu,Cuddalore,Kurinjipadi,T.Palayam,11.6067,79.635,10-01-25,0.65
+Tamil Nadu,Cuddalore,Kurinjipadi,Terkumelur,11.5892,79.5275,10-01-25,1.50
+Tamil Nadu,Cuddalore,Kurinjipadi,Theerthanagiri,11.5692,79.6789,10-01-25,2.00
+Tamil Nadu,Cuddalore,Kurinjipadi,Thenkuthu,11.5819,79.5533,10-01-25,3.90
+Tamil Nadu,Cuddalore,Kurinjipadi,Thiruchopuram,11.6164,79.7414,10-01-25,4.48
+Tamil Nadu,Cuddalore,Kurinjipadi,Vadakuthu,11.6175,79.5539,10-01-25,2.35
+Tamil Nadu,Cuddalore,Mangalur,M.Podayur,11.4817,79.0458,10-01-25,3.10
+Tamil Nadu,Cuddalore,Mangalur,Ramanatham,11.4083,79.0083,10-01-25,3.03
+Tamil Nadu,Cuddalore,Mangalur,Tholudur,11.41944,78.99306,10-01-25,25.35
+Tamil Nadu,Cuddalore,Nallur,Veppur,11.5322,79.1239,10-01-25,1.97
+Tamil Nadu,Cuddalore,Parangipettai,Ariyakozhtti,11.4894,79.7156,10-01-25,1.40
+Tamil Nadu,Cuddalore,Parangipettai,C.Manambadi,11.4458,79.7639,10-01-25,1.00
+Tamil Nadu,Cuddalore,Vriddhachalam,Kavanai,11.5167,79.3333,10-01-25,4.35
+Tamil Nadu,Cuddalore,Vriddhachalam,Kavanai,11.525,79.33334,10-01-25,50.95
+Tamil Nadu,Cuddalore,Vriddhachalam,Ko. Boovanur,11.6083,79.3167,10-01-25,1.05
+Tamil Nadu,Cuddalore,Vriddhachalam,Nallur,11.5683,79.19,10-01-25,3.40
+State,District,Block,Village,Latitude,Longitude,Date,WL_mbgl
+Tamil Nadu,Ariyalur,Andimadam,Kattathur,11.30690,79.34940,30-08-25,0.58
+Tamil Nadu,Ariyalur,Andimadam,Koovathur,11.29780,79.37750,30-08-25,1.43
+Tamil Nadu,Ariyalur,Andimadam,Olaiyur,11.41000,79.33280,30-08-25,2.35
+Tamil Nadu,Ariyalur,Jayamkondam,Jayakondasolapuram,11.21280,79.36440,30-08-25,2.30
+Tamil Nadu,Ariyalur,Jayamkondam,Pappakudi,11.28530,79.49000,30-08-25,3.10
+Tamil Nadu,Ariyalur,Jayamkondam,Periyavalayam,11.21110,79.39580,30-08-25,9.19
+Tamil Nadu,Ariyalur,Jayamkondam,Suriyamanal,11.19810,79.32720,30-08-25,3.39
+Tamil Nadu,Ariyalur,Thirumanur,Kelaiyur,11.03330,79.05000,30-08-25,2.55
+Tamil Nadu,Chengalpattu,Chithamur,Atcharappakkam,12.40000,79.81670,30-08-25,5.82
+Tamil Nadu,Chengalpattu,Kattankolathur,Chengalpattu,12.70000,79.97500,30-08-25,2.25
+Tamil Nadu,Chengalpattu,Kattankolathur,Kozapakkam,12.86860,80.11030,30-08-25,3.51
+Tamil Nadu,Chengalpattu,Kundrathur,Nanthivaram,12.84170,80.06670,30-08-25,11.21
+Tamil Nadu,Chengalpattu,Kundrathur,Nanthivaram,12.84170,80.06670,30-08-25,19.72
+Tamil Nadu,Chengalpattu,Kundrathur,Potheri,12.82767,80.04333,30-08-25,4.30
+Tamil Nadu,Chengalpattu,Kundrathur,Thiruneermalai,12.96280,80.11310,30-08-25,6.55
+Tamil Nadu,Chengalpattu,Kundrathur,Thiruneermalai,12.96292,80.11315,30-08-25,7.98
+Tamil Nadu,Chengalpattu,Madurantakam,Karunkuzi,12.52920,79.90000,30-08-25,5.81
+Tamil Nadu,Chengalpattu,Madurantakam,Nethappakkam,12.44310,79.88920,30-08-25,4.33
+Tamil Nadu,Chengalpattu,Madurantakam,Porur,12.34720,79.90830,30-08-25,4.97
+Tamil Nadu,Chengalpattu,St.Thomas Mount,Chitlapakkam,12.94060,80.13750,30-08-25,3.64
+Tamil Nadu,Chengalpattu,St.Thomas Mount,Chitlapakkam,12.93330,80.13330,30-08-25,6.18
+Tamil Nadu,Chengalpattu,St.Thomas Mount,Hasthinapuram,12.94310,80.14780,30-08-25,3.07
+Tamil Nadu,Chengalpattu,St.Thomas Mount,Injambakkam,12.91250,80.24580,30-08-25,2.26
+Tamil Nadu,Chengalpattu,St.Thomas Mount,Injambakkam,12.91250,80.24580,30-08-25,2.51
+Tamil Nadu,Chengalpattu,St.Thomas Mount,Irumbuliyur,12.91670,80.10830,30-08-25,7.37
+Tamil Nadu,Chengalpattu,St.Thomas Mount,Jameen Pallavaram,12.95140,80.13920,30-08-25,3.55
+Tamil Nadu,Chengalpattu,St.Thomas Mount,Lion's Club,12.91986,80.25175,30-08-25,4.37
+Tamil Nadu,Chengalpattu,St.Thomas Mount,Madambakkam,12.88750,80.14860,30-08-25,4.79
+Tamil Nadu,Chengalpattu,St.Thomas Mount,Moovarasampattu,12.96220,80.18420,30-08-25,6.32
+Tamil Nadu,Chengalpattu,St.Thomas Mount,St.Thomas Mount,12.97280,80.15440,30-08-25,6.72
+Tamil Nadu,Chengalpattu,St.Thomas Mount,St.Thomas Mount,12.97280,80.15440,30-08-25,18.10
+Tamil Nadu,Chengalpattu,St.Thomas Mount,Thirisulam,12.97220,80.17360,30-08-25,6.50
+Tamil Nadu,Chengalpattu,St.Thomas Mount,Vengaivaasal,12.90030,80.17110,30-08-25,8.91
+Tamil Nadu,Chengalpattu,St.Thomas Mount,Vettuvankani,12.93389,80.25697,30-08-25,2.21
+Tamil Nadu,Chengalpattu,Thiruporur,Muttukadu,12.82190,80.24060,30-08-25,5.31
+Tamil Nadu,Chengalpattu,Thiruporur,Thirupporur,12.72920,80.19170,30-08-25,3.42
+Tamil Nadu,Chengalpattu,Tirukkalukunram,Mamallapuram,12.62500,80.19170,30-08-25,4.82
+Tamil Nadu,Chennai,Chennai,Egmore,13.07470,80.26250,30-08-25,0.08
+Tamil Nadu,Chennai,Chennai,Elegant flat,12.98269,80.26408,30-08-25,4.53
+Tamil Nadu,Chennai,Chennai,Kodambakkam,13.04170,80.20830,30-08-25,1.26
+Tamil Nadu,Chennai,Chennai,Mylapore,13.01920,80.26780,30-08-25,1.39
+Tamil Nadu,Chennai,Chennai,Mylapore,13.02500,80.25830,30-08-25,2.93
+Tamil Nadu,Chennai,Chennai,Purasawalkam,13.08330,80.27080,30-08-25,1.91
+Tamil Nadu,Chennai,Chennai,Saidapet,13.02220,80.22500,30-08-25,1.47
+Tamil Nadu,Chennai,Chennai,Seashore Apartment 39,12.97864,80.26584,30-08-25,4.38
+Tamil Nadu,Chennai,Chennai,Thiruvanmiyur,12.98750,80.26390,30-08-25,3.32
+Tamil Nadu,Chennai,Chennai,Tondiarpet,13.11670,80.27500,30-08-25,4.59
+Tamil Nadu,Chennai,Chennai,Tondiarpet,13.10560,80.28140,30-08-25,6.59
+Tamil Nadu,Chennai,Chennai,Triplicane,13.05560,80.28140,30-08-25,4.24
+Tamil Nadu,Chennai,Chennai,Urur,13.00140,80.27000,30-08-25,4.81
+Tamil Nadu,Chennai,Chennai,Vada Agaram,13.06670,80.22780,30-08-25,6.34
+Tamil Nadu,Chennai,Kundrathur,Madanandapuram,13.02250,80.15330,30-08-25,3.70
+Tamil Nadu,Chennai,Puzhal,Kadirvedu,13.15000,80.20000,30-08-25,6.18
+Tamil Nadu,Chennai,Puzhal,Korattur,13.13670,80.16940,30-08-25,9.56
+Tamil Nadu,Chennai,Thomas Malai,Chemmancheri,12.86330,80.22610,30-08-25,2.12
+Tamil Nadu,Chennai,Thomas Malai,Palavanthangal,13.00420,80.18750,30-08-25,2.44
+Tamil Nadu,Coimbatore,Anamalai,Marchanaickenpalayam,10.63530,76.94110,30-08-25,1.90
+Tamil Nadu,Coimbatore,Annur,Annur,11.23333,77.10833,30-08-25,7.31
+Tamil Nadu,Coimbatore,Annur,Annur,11.23330,77.10830,30-08-25,8.78
+Tamil Nadu,Coimbatore,Annur,Annur,11.22500,77.10830,30-08-25,8.92
+Tamil Nadu,Coimbatore,Annur,Kattampatty,11.17580,77.05750,30-08-25,21.48
+Tamil Nadu,Coimbatore,Annur,Kuppanur,11.29830,77.07890,30-08-25,7.03
+Tamil Nadu,Coimbatore,Karamadai,Karamadai,11.25580,76.93470,30-08-25,8.44
+Tamil Nadu,Coimbatore,Karamadai,Mettupalayam,11.30000,76.94720,30-08-25,10.60
+Tamil Nadu,Coimbatore,Kinathukadavu,Kinthukadavu,10.81670,77.01670,30-08-25,4.98
+Tamil Nadu,Coimbatore,Kinathukadavu,Periya Negamam,10.72920,77.09170,30-08-25,2.75
+Tamil Nadu,Coimbatore,Kinathukadavu,Pottayandipuram,10.80830,76.95830,30-08-25,3.15
+Tamil Nadu,Coimbatore,Kinathukadavu,Sozhanur,10.73330,77.02920,30-08-25,4.25
+Tamil Nadu,Coimbatore,Madukkarai,Ettimadai,10.87500,76.90000,30-08-25,10.85
+Tamil Nadu,Coimbatore,Madukkarai,Madukarai,10.90830,76.96670,30-08-25,13.60
+Tamil Nadu,Coimbatore,Periyanayakkanpalayam,Aupperpalayam,11.04140,77.00060,30-08-25,5.25
+Tamil Nadu,Coimbatore,Periyanayakkanpalayam,Billichi,11.20690,76.99220,30-08-25,6.90
+Tamil Nadu,Coimbatore,Periyanayakkanpalayam,Goundenpalayam,11.04190,76.94190,30-08-25,2.90
+Tamil Nadu,Coimbatore,Periyanayakkanpalayam,Vadavalli,11.03140,76.88440,30-08-25,46.00
+Tamil Nadu,Coimbatore,Pollachi North,Nalluthukuzhuli,10.67500,76.93750,30-08-25,2.40
+Tamil Nadu,Coimbatore,Pollachi North,Thalakkarai,10.69580,76.93750,30-08-25,2.45
+Tamil Nadu,Coimbatore,Pollachi South,T. Kottampatty,10.66110,77.00000,30-08-25,0.60
+Tamil Nadu,Coimbatore,Sarcarsamakulam,Saravanmpatty,11.06940,77.00140,30-08-25,11.80
+Tamil Nadu,Coimbatore,Sarcarsamakulam,Saravanmpatty,11.07500,77.00140,30-08-25,21.15
+Tamil Nadu,Coimbatore,Sultanpet,Chettipalayam,10.94167,77.07500,30-08-25,34.24
+Tamil Nadu,Coimbatore,Sulur,Karumathampatty,11.08750,77.17920,30-08-25,2.45
+Tamil Nadu,Coimbatore,Sulur,Sulur,11.02500,77.12500,30-08-25,2.55
+Tamil Nadu,Coimbatore,Thondamuthur,Kuniamuthur,10.95420,76.95000,30-08-25,14.75
+Tamil Nadu,Coimbatore,Thondamuthur,Kurichy,10.96670,76.98330,30-08-25,6.35
+Tamil Nadu,Coimbatore,Thondamuthur,Singanallur,10.99640,77.02080,30-08-25,4.05
+Tamil Nadu,Coimbatore,Thondamuthur,Thelungupalayam,10.98330,76.92280,30-08-25,3.28
+Tamil Nadu,Coimbatore,Thondamuthur,Vadavalli,11.02500,76.90830,30-08-25,26.85
+Tamil Nadu,Cuddalore,Cuddalore,Thiyagavalli,11.63920,79.74720,30-08-25,1.32
+Tamil Nadu,Cuddalore,Cuddalore,Tiruvandipuram,11.75000,79.71667,30-08-25,1.01
+Tamil Nadu,Cuddalore,Cuddalore,Vanniyar Palayam,11.76440,79.76470,30-08-25,4.65
+Tamil Nadu,Cuddalore,Kammapuram,Gangaikondan,11.55830,79.48330,30-08-25,5.50
+Tamil Nadu,Cuddalore,Kammapuram,Pudhukoraipettai,11.51860,79.36970,30-08-25,0.97
+Tamil Nadu,Cuddalore,Kattumannarkoil,Ma.Arasur,11.26670,79.62080,30-08-25,4.47
+Tamil Nadu,Cuddalore,Kattumannarkoil,Mannargudi,11.27500,79.54720,30-08-25,2.44
+Tamil Nadu,Cuddalore,Keerapalayam,Chidambaram,11.38330,79.38330,30-08-25,3.83
+Tamil Nadu,Cuddalore,Komaratchi,Solatharam,11.36170,79.50830,30-08-25,1.95
+Tamil Nadu,Cuddalore,Komaratchi,Veeranatham,11.30580,79.59390,30-08-25,1.22
+Tamil Nadu,Cuddalore,Kurinjipadi,Alappakkam,11.60110,79.71890,30-08-25,2.32
+Tamil Nadu,Cuddalore,Kurinjipadi,Kottagam,11.52220,79.52560,30-08-25,1.11
+Tamil Nadu,Cuddalore,Kurinjipadi,Kundiamallur North,11.52690,79.65170,30-08-25,3.75
+Tamil Nadu,Cuddalore,Kurinjipadi,Parvathipuram,11.53750,79.54170,30-08-25,7.53
+Tamil Nadu,Cuddalore,Kurinjipadi,Puliyur,11.64750,79.63920,30-08-25,10.14
+Tamil Nadu,Cuddalore,Kurinjipadi,Sepalanatham,11.52940,79.53110,30-08-25,4.87
+Tamil Nadu,Cuddalore,Kurinjipadi,Serakuppam,11.56250,79.59170,30-08-25,5.74
+Tamil Nadu,Cuddalore,Kurinjipadi,Serakuppam,11.53940,79.59140,30-08-25,12.23
+Tamil Nadu,Cuddalore,Kurinjipadi,T.Palayam,11.60670,79.63500,30-08-25,1.68
+Tamil Nadu,Cuddalore,Kurinjipadi,Terkumelur,11.58920,79.52750,30-08-25,1.46
+Tamil Nadu,Cuddalore,Kurinjipadi,Theerthanagiri,11.56920,79.67890,30-08-25,3.42
+Tamil Nadu,Cuddalore,Kurinjipadi,Thenkuthu,11.58190,79.55330,30-08-25,3.61
+Tamil Nadu,Cuddalore,Kurinjipadi,Thiruchopuram,11.61640,79.74140,30-08-25,5.30
+Tamil Nadu,Cuddalore,Kurinjipadi,Vadakuthu,11.61750,79.55390,30-08-25,10.45
+Tamil Nadu,Cuddalore,Kurinjipadi,Vegakollai,11.66860,79.58190,30-08-25,8.48
+Tamil Nadu,Cuddalore,Mangalur,M.Podayur,11.48170,79.04580,30-08-25,6.84
+Tamil Nadu,Cuddalore,Mangalur,Ramanatham,11.40830,79.00830,30-08-25,5.68
+Tamil Nadu,Cuddalore,Parangipettai,Ariyakozhtti,11.48940,79.71560,30-08-25,2.42
+Tamil Nadu,Cuddalore,Parangipettai,C.Manambadi,11.44580,79.76390,30-08-25,3.68
+Tamil Nadu,Cuddalore,Parangipettai,Parangipettai,11.49170,79.75420,30-08-25,2.48
+Tamil Nadu,Cuddalore,Vriddhachalam,Kavanai,11.51670,79.33330,30-08-25,11.25
+Tamil Nadu,Cuddalore,Vriddhachalam,Ko. Boovanur,11.60830,79.31670,30-08-25,2.05
+Tamil Nadu,Cuddalore,Vriddhachalam,Nallur,11.56830,79.19000,30-08-25,5.41

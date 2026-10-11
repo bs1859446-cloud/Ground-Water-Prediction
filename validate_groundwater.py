@@ -1,0 +1,1 @@
+import pandas as pd,glob,os; [(print(os.path.basename(f), len(pd.read_csv(f)))) for f in glob.glob('*.csv')]
