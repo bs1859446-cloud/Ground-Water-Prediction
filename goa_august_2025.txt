@@ -1,0 +1,561 @@
+import pandas as pd
+import re
+import os
+import sys
+
+# ============================================================
+# ADD GOA AUGUST 2025 DATA
+# ============================================================
+
+BASE_FILE = "groundwater_final_6_states_august_2025.csv"
+GOA_TEXT_FILE = "goa_august_2025.txt"
+OUTPUT_FILE = "groundwater_final_7_states_august_2025.csv"
+
+EXPECTED_BASE_ROWS = 372
+
+EXPECTED_STATE_COUNTS = {
+    "Andhra Pradesh": 95,
+    "Arunachal Pradesh": 28,
+    "Assam": 52,
+    "Bihar": 72,
+    "Delhi": 116,
+    "Kerala": 9,
+}
+
+REQUIRED_COLUMNS = [
+    "State",
+    "District",
+    "Block",
+    "Village",
+    "Latitude",
+    "Longitude",
+    "Date",
+    "WL_mbgl"
+]
+
+print("=" * 70)
+print("        ADD GOA AUGUST 2025 DATA")
+print("=" * 70)
+
+
+# ============================================================
+# LOAD EXISTING DATA
+# ============================================================
+
+print("\n===== LOAD EXISTING 6-STATE DATA =====")
+
+if not os.path.exists(BASE_FILE):
+    print(f"ERROR: {BASE_FILE} not found.")
+    sys.exit(1)
+
+try:
+    base = pd.read_csv(BASE_FILE)
+except Exception as e:
+    print("ERROR loading base dataset:")
+    print(e)
+    sys.exit(1)
+
+print(f"Base rows loaded: {len(base)}")
+
+if len(base) != EXPECTED_BASE_ROWS:
+    print(
+        f"ERROR: Expected {EXPECTED_BASE_ROWS} rows "
+        f"in base dataset, found {len(base)}."
+    )
+    sys.exit(1)
+
+
+# ============================================================
+# CHECK BASE COLUMNS
+# ============================================================
+
+for col in REQUIRED_COLUMNS:
+    if col not in base.columns:
+        print(f"ERROR: Missing column in base dataset: {col}")
+        sys.exit(1)
+
+
+# ============================================================
+# LOAD GOA RAW TEXT
+# ============================================================
+
+print("\n===== LOAD GOA AUGUST DATA =====")
+
+if not os.path.exists(GOA_TEXT_FILE):
+    print(f"ERROR: {GOA_TEXT_FILE} not found.")
+    print()
+    print("Create the file first:")
+    print(GOA_TEXT_FILE)
+    sys.exit(1)
+
+try:
+    with open(GOA_TEXT_FILE, "r", encoding="utf-8-sig") as f:
+        raw_text = f.read()
+except Exception as e:
+    print("ERROR reading Goa text file:")
+    print(e)
+    sys.exit(1)
+
+if not raw_text.strip():
+    print("ERROR: Goa text file is empty.")
+    sys.exit(1)
+
+print(f"Raw Goa characters: {len(raw_text)}")
+
+
+# ============================================================
+# CLEAN RAW TEXT
+# ============================================================
+
+text = raw_text
+
+# Remove repeated table heading
+text = re.sub(
+    r"August\s+month\s+Depth\s+to\s+Ground\s+Water\s+Level.*?"
+    r"WL\(mbgl\)",
+    " ",
+    text,
+    flags=re.IGNORECASE | re.DOTALL
+)
+
+# Remove column headings if they appear separately
+text = re.sub(
+    r"State\s+District\s+Block\s+Village\s+Latitute\s+Longitude\s+Date\s+WL\(mbgl\)",
+    " ",
+    text,
+    flags=re.IGNORECASE
+)
+
+text = re.sub(
+    r"State\s+District\s+Block\s+Village\s+Latitude\s+Longitude\s+Date\s+WL\(mbgl\)",
+    " ",
+    text,
+    flags=re.IGNORECASE
+)
+
+# Normalize whitespace
+text = re.sub(r"\s+", " ", text).strip()
+
+
+# ============================================================
+# PARSE GOA RECORDS
+#
+# Format:
+# Goa North Goa Bardez Alto Betim Porvorim
+# 15.52605 73.82983 28-08-25 1.96
+#
+# Goa South Goa Canacona Agonda
+# 15.04152 73.99121 29-08-25 2.18
+#
+# We use the coordinates/date/WL as anchors.
+# ============================================================
+
+pattern = re.compile(
+    r"""
+    Goa\s+
+    (North|South)\s+
+    Goa\s+
+    ([A-Za-z0-9&()./'_-]+)\s+
+    (.*?)\s+
+    (-?\d+(?:\.\d+)?)\s+
+    (-?\d+(?:\.\d+)?)\s+
+    (\d{2}-\d{2}-\d{2,4})\s+
+    (-?\d+(?:\.\d+)?)
+    """,
+    re.IGNORECASE | re.VERBOSE
+)
+
+matches = list(pattern.finditer(text))
+
+print(f"Raw Goa records detected: {len(matches)}")
+
+if len(matches) == 0:
+    print()
+    print("ERROR: No Goa records could be parsed.")
+    print("Check goa_august_2025.txt")
+    sys.exit(1)
+
+
+# ============================================================
+# BUILD GOA DATA
+# ============================================================
+
+records = []
+
+for match in matches:
+
+    direction = match.group(1).strip()
+    block = match.group(2).strip()
+    village = match.group(3).strip()
+
+    latitude = match.group(4)
+    longitude = match.group(5)
+    date = match.group(6)
+    wl = match.group(7)
+
+    # --------------------------------------------------------
+    # Important:
+    # The pasted Goa data has:
+    #
+    # Goa North Goa Bardez ...
+    # Goa South Goa Canacona ...
+    #
+    # Therefore:
+    # State = Goa
+    # District = North Goa / South Goa
+    # --------------------------------------------------------
+
+    district = f"{direction} Goa"
+
+    records.append({
+        "State": "Goa",
+        "District": district,
+        "Block": block,
+        "Village": village,
+        "Latitude": latitude,
+        "Longitude": longitude,
+        "Date": date,
+        "WL_mbgl": wl
+    })
+
+
+goa = pd.DataFrame(records)
+
+
+# ============================================================
+# NORMALIZE
+# ============================================================
+
+print("\n===== NORMALIZE GOA DATA =====")
+
+for col in ["State", "District", "Block", "Village"]:
+    goa[col] = goa[col].astype(str).str.strip()
+
+goa["Latitude"] = pd.to_numeric(
+    goa["Latitude"],
+    errors="coerce"
+)
+
+goa["Longitude"] = pd.to_numeric(
+    goa["Longitude"],
+    errors="coerce"
+)
+
+goa["WL_mbgl"] = pd.to_numeric(
+    goa["WL_mbgl"],
+    errors="coerce"
+)
+
+goa["Date"] = pd.to_datetime(
+    goa["Date"],
+    format="%d-%m-%y",
+    errors="coerce"
+)
+
+
+# ============================================================
+# GOA STATE CHECK
+# ============================================================
+
+print("\n===== GOA STATE CHECK =====")
+
+goa_state_count = (goa["State"] == "Goa").sum()
+
+print(f"Goa rows: {goa_state_count}")
+print(f"Other-state rows: {len(goa) - goa_state_count}")
+
+if goa_state_count != len(goa):
+    print("ERROR: Non-Goa records detected.")
+    sys.exit(1)
+
+
+# ============================================================
+# DATE CHECK
+# ============================================================
+
+print("\n===== DATE CHECK =====")
+
+invalid_dates = goa["Date"].isna().sum()
+
+print(f"Missing/invalid Goa dates: {invalid_dates}")
+
+if invalid_dates > 0:
+    print(goa[goa["Date"].isna()])
+    print("ERROR: Invalid Goa dates.")
+    sys.exit(1)
+
+print(
+    "Goa dates:",
+    sorted(goa["Date"].dt.strftime("%d-%m-%Y").unique())
+)
+
+
+# ============================================================
+# AUGUST CHECK
+# ============================================================
+
+print("\n===== AUGUST CHECK =====")
+
+august_rows = (
+    (goa["Date"].dt.month == 8) &
+    (goa["Date"].dt.year == 2025)
+).sum()
+
+non_august = len(goa) - august_rows
+
+print(f"Goa August rows: {august_rows}")
+print(f"Non-August rows: {non_august}")
+
+if non_august != 0:
+    print("ERROR: Non-August records detected.")
+    sys.exit(1)
+
+
+# ============================================================
+# MISSING VALUES
+# ============================================================
+
+print("\n===== GOA MISSING VALUES =====")
+
+missing = goa[REQUIRED_COLUMNS].isna().sum()
+
+print(missing)
+
+if missing.any():
+    print("\nERROR: Missing values exist in Goa data.")
+    print(goa[goa[REQUIRED_COLUMNS].isna().any(axis=1)])
+    sys.exit(1)
+
+
+# ============================================================
+# COORDINATE CHECK
+# ============================================================
+
+print("\n===== GOA COORDINATE CHECK =====")
+
+invalid_coordinates = goa[
+    (goa["Latitude"] < -90) |
+    (goa["Latitude"] > 90) |
+    (goa["Longitude"] < -180) |
+    (goa["Longitude"] > 180)
+]
+
+print(f"Invalid Goa coordinates: {len(invalid_coordinates)}")
+
+if len(invalid_coordinates) > 0:
+    print(invalid_coordinates)
+    print("ERROR: Invalid coordinates.")
+    sys.exit(1)
+
+
+# ============================================================
+# GROUNDWATER LEVEL CHECK
+# ============================================================
+
+print("\n===== GOA GROUNDWATER LEVEL CHECK =====")
+
+print(f"Minimum WL: {goa['WL_mbgl'].min()}")
+print(f"Maximum WL: {goa['WL_mbgl'].max()}")
+print(f"Average WL: {goa['WL_mbgl'].mean()}")
+
+
+# ============================================================
+# DUPLICATE CHECK
+# ============================================================
+
+print("\n===== GOA DUPLICATE CHECK =====")
+
+duplicates = goa.duplicated().sum()
+
+print(f"Duplicate Goa rows: {duplicates}")
+
+if duplicates > 0:
+    print("ERROR: Duplicate Goa rows found.")
+    print(goa[goa.duplicated(keep=False)])
+    sys.exit(1)
+
+
+# ============================================================
+# SHOW GOA SUMMARY
+# ============================================================
+
+print("\n===== GOA DISTRICT SUMMARY =====")
+
+print(goa.groupby("District").size())
+
+
+# ============================================================
+# COMBINE
+# ============================================================
+
+print("\n===== COMBINE DATA =====")
+
+final = pd.concat(
+    [base[REQUIRED_COLUMNS], goa[REQUIRED_COLUMNS]],
+    ignore_index=True
+)
+
+expected_final_rows = len(base) + len(goa)
+
+print(f"Previous rows: {len(base)}")
+print(f"Goa rows:      {len(goa)}")
+print(f"Expected rows: {expected_final_rows}")
+print(f"Actual rows:   {len(final)}")
+
+if len(final) != expected_final_rows:
+    print("ERROR: Final row count mismatch.")
+    sys.exit(1)
+
+
+# ============================================================
+# FINAL STATE COUNTS
+# ============================================================
+
+print("\n===== FINAL STATE COUNTS =====")
+
+state_counts = final["State"].value_counts()
+
+print(state_counts)
+
+
+# ============================================================
+# VALIDATE PREVIOUS STATES
+# ============================================================
+
+print("\n===== STATE VALIDATION =====")
+
+validation_failed = False
+
+for state, expected in EXPECTED_STATE_COUNTS.items():
+
+    actual = int(state_counts.get(state, 0))
+
+    if actual == expected:
+        print(f" - {state}: {actual} - OK")
+    else:
+        print(
+            f" - {state}: expected {expected}, found {actual}"
+        )
+        validation_failed = True
+
+
+# Goa must exist
+goa_count = int(state_counts.get("Goa", 0))
+
+if goa_count == len(goa):
+    print(f" - Goa: {goa_count} - OK")
+else:
+    print(
+        f" - Goa: expected {len(goa)}, found {goa_count}"
+    )
+    validation_failed = True
+
+
+allowed_states = set(EXPECTED_STATE_COUNTS.keys()) | {"Goa"}
+
+unexpected_states = [
+    state for state in state_counts.index
+    if state not in allowed_states
+]
+
+if unexpected_states:
+    print(f" - Unexpected states: {unexpected_states}")
+    validation_failed = True
+
+
+if validation_failed:
+    print()
+    print("=" * 70)
+    print("ERROR: STATE VALIDATION FAILED.")
+    print("Final dataset will NOT be saved.")
+    print("=" * 70)
+    sys.exit(1)
+
+
+# ============================================================
+# FINAL MISSING VALUE CHECK
+# ============================================================
+
+print("\n===== FINAL MISSING VALUE CHECK =====")
+
+final_missing = final[REQUIRED_COLUMNS].isna().sum()
+
+print(final_missing)
+
+if final_missing.any():
+    print("ERROR: Missing values exist in final dataset.")
+    print(final[final[REQUIRED_COLUMNS].isna().any(axis=1)])
+    sys.exit(1)
+
+
+# ============================================================
+# FINAL DUPLICATE CHECK
+# ============================================================
+
+print("\n===== FINAL DUPLICATE CHECK =====")
+
+final_duplicates = final.duplicated().sum()
+
+print(f"Duplicate rows: {final_duplicates}")
+
+if final_duplicates > 0:
+    print("ERROR: Duplicate rows found in final dataset.")
+    sys.exit(1)
+
+
+# ============================================================
+# SAVE
+# ============================================================
+
+print("\n===== SAVING FINAL DATASET =====")
+
+final.to_csv(
+    OUTPUT_FILE,
+    index=False,
+    date_format="%d-%m-%Y"
+)
+
+print(f"Final dataset saved as: {OUTPUT_FILE}")
+
+
+# ============================================================
+# VERIFY SAVED FILE
+# ============================================================
+
+print("\n===== VERIFY SAVED FILE =====")
+
+try:
+    saved = pd.read_csv(OUTPUT_FILE)
+
+    print(f"Saved rows: {len(saved)}")
+
+    if len(saved) != expected_final_rows:
+        print("ERROR: Saved row count mismatch.")
+        sys.exit(1)
+
+except Exception as e:
+    print("ERROR verifying saved file:")
+    print(e)
+    sys.exit(1)
+
+
+# ============================================================
+# FINAL RESULT
+# ============================================================
+
+print()
+print("=" * 70)
+print("          GOA AUGUST DATA ADDED SUCCESSFULLY")
+print("=" * 70)
+
+print(f"Previous rows : {len(base)}")
+print(f"Goa rows      : {len(goa)}")
+print(f"Final rows    : {len(final)}")
+print(f"Output file   : {OUTPUT_FILE}")
+
+print("\nFINAL STATE COUNTS:")
+print(final["State"].value_counts())
+
+print()
+print("ALL CHECKS PASSED SUCCESSFULLY.")
+print("=" * 70)
